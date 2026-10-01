@@ -1,3 +1,7 @@
+# SID:C113181117<BR>
+#Name:許博凱<BR>
+EX06
+<HR>
 <?php
 function square(float|int $v): int|float {
     return $v ** 2;

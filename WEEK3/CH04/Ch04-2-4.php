@@ -1,3 +1,7 @@
+# SID:C113181117<BR>
+#Name:許博凱<BR>
+EX03
+<HR>
 <?php
 // 指定變數值
     $name = "myrepo"; // 將字串 "myName" 賦值給變數 $name
