@@ -1,6 +1,6 @@
 <?php
 // 指定變數值
-    $name = "myName"; // 將字串 "myName" 賦值給變數 $name
+    $name = "myrepo"; // 將字串 "myName" 賦值給變數 $name
 
     // 動態變數名稱
     $$name = "陳允東";  // 使用變數變數，將 "陳允東" 賦值給變數 $myName
@@ -11,7 +11,7 @@
 
     // 顯示變數內容
     echo "變數\$name = $name<br/>"; // 顯示變數 $name 的值
-    echo "變數$$name = $myName<br/>"; // 顯示變數 $myName 的值
+    echo "變數$$name = $myrepo<br/>"; // 顯示變數 $myName 的值
     echo "變數$$name = ${$name}<br/>"; // 顯示變數 $myName 的值，使用變數變數語法
     echo "變數\$username = $username<br/>"; // 顯示變數 $username 的值
     echo "變數\$username1 = $username1<br/>"; // 顯示變數 $username1 的值
