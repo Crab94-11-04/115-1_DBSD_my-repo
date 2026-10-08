@@ -1,3 +1,7 @@
+SID C113181117<BR>
+NAME 許博凱<BR>
+EX03<BR>
+<hr>
 <?php
 $result = 0;
 $n = 0;
