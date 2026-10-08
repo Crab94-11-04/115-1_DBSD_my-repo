@@ -6,4 +6,6 @@ $grade >= 70 => "乙等!<br/>",
 $grade >= 60 => "丙等!<br/>",
 default => "丁等!<br/>"
 };
+echo $grade;
+echo $result;
 ?>
