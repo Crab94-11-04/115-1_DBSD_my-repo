@@ -19,5 +19,5 @@ if (isset($_COOKIE[$id])) { // 檢查Cookie是否存在
     while (list($name, $value) = each($_COOKIE[$id]))
         setcookie($id . "[" . $name . "]", "", time() - 3600);
 }
-header("Location: shoppingcart.php");  // 轉址
+header("Location: catalog.php");  // 轉址
 ?>

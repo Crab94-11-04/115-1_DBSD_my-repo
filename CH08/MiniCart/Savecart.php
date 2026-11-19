@@ -19,6 +19,6 @@ if (isset($_POST["Item"])) {
             $_SESSION["Price"] = 21000;
             break;
     }
-    header("Location: Savecart.php");  // 轉址
+    header("Location: Shoppingcart.php");  // 轉址
 }
 ?>
