@@ -1,0 +1,28 @@
+<?php
+require("about_me.php");
+echo "EX01 <hr/>";
+$file = basename($_SERVER['PHP_SELF'], ".php");
+$path = realpath($file . ".php");
+echo "real path : $path <br/>";
+
+$part = pathinfo($path);
+echo "path: " . $part["dirname"] . "<br/>";
+echo "filename: " . $part["basename"] . "<br/>";
+echo "extension: " . $part["extension"] . "<hr/>";
+//檢查檔案是否存在
+if (file_exists($file . ".php")) {
+    echo "File: $file.php exists.<br/>";
+} else {
+    echo "File: $file.php does not exist.<br/>";
+}
+//複製檔案
+if (!copy($file . ".php", $file . ".bak")){
+    echo "file: $file.php copy to bak failed.<br/>";
+}else {
+    echo "file: $file.php copy to bak successful.<br/>";
+}
+//檔案更名
+rename ($file . ".bak", "test.txt");
+//刪除檔案
+unlink($file . ".php");
+echo "file: $file.php has been deleted.<br/>";
